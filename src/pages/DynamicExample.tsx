@@ -31,7 +31,8 @@ const USDC_DECIMALS = 6;
 const TRANSFER_AMOUNT = 100_000n; // 0.1 USDC
 
 function DynamicWallet() {
-  const { user, handleLogOut, sdkHasLoaded, isAuthenticated, primaryWallet: contextPrimaryWallet } = useDynamicContext();
+  const { user, handleLogOut, sdkHasLoaded, primaryWallet: contextPrimaryWallet } = useDynamicContext();
+  const isAuthenticated = !!user;
   const userWallets = useUserWallets();
   
   // Get the first available wallet - try context first, then userWallets hook

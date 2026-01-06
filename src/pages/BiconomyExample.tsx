@@ -4,7 +4,6 @@ import {
   custom,
   erc20Abi,
   http,
-  type WalletClient,
   type Hex,
   formatUnits
 } from 'viem';
@@ -22,7 +21,6 @@ import { useReadContract } from 'wagmi';
 
 export default function BiconomyExample() {
   const [account, setAccount] = useState<string | null>(null);
-  const [walletClient, setWalletClient] = useState<WalletClient | null>(null);
   const [meeClient, setMeeClient] = useState<MeeClient | null>(null);
   const [orchestrator, setOrchestrator] = useState<MultichainSmartAccount | null>(null);
   const [meeScanLink, setMeeScanLink] = useState<string | null>(null);
@@ -81,7 +79,6 @@ export default function BiconomyExample() {
         chain: base,
         transport: custom((window as any).ethereum)
       });
-      setWalletClient(wallet);
   
       const [address] = await wallet.requestAddresses();
       setAccount(address);

@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect } from 'react';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ParaProvider, useModal, useAccount, useWallet } from '@getpara/react-sdk';
 import '@getpara/react-sdk/styles.css';
