@@ -1,0 +1,70 @@
+:root {
+  /* Palette: Minimalist Flat */
+  --bg-app: #ffffff;
+  --bg-card: #f8f9fa; /* Slight contrast from white background */
+  --bg-glass: rgba(255, 255, 255, 0.9);
+  
+  --text-primary: #111111;
+  --text-secondary: #555555;
+  --text-tertiary: #888888;
+  
+  --accent-primary: #000000; /* Stark black for high contrast */
+  --accent-secondary: #0052cc; /* Professional Blue */
+  --accent-surface: #e6f0ff;
+  
+  --success: #00875a;
+  --error: #de350b;
+  
+  --border-subtle: #e0e0e0;
+  --border-strong: #000000;
+  
+  --font-main: 'Manrope', system-ui, -apple-system, sans-serif;
+  
+  /* Removed shadows */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+  --shadow-glow: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-app);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--accent-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-main);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
