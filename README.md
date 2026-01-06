@@ -14,10 +14,10 @@ Biconomy AbstractJS is a toolkit for building chain-abstracted applications. It 
 
 | Provider | Description | Auth Methods |
 |----------|-------------|--------------|
-| [MetaMask (Browser Wallet)](./biconomy.md) | Direct browser wallet integration | Wallet connection |
-| [Dynamic](./dynamic.md) | Multi-auth platform with embedded wallets | Email, Social, Wallet |
-| [Para](./para.md) | Embedded wallet infrastructure | Email, Passkeys, Wallet |
-| [Privy](./privy.md) | Auth infrastructure with embedded wallets | Email, SMS, Social |
+| [MetaMask (Browser Wallet)](./tutorials/biconomy.md) | Direct browser wallet integration | Wallet connection |
+| [Dynamic](./tutorials/dynamic.md) | Multi-auth platform with embedded wallets | Email, Social, Wallet |
+| [Para](./tutorials/para.md) | Embedded wallet infrastructure | Email, Passkeys, Wallet |
+| [Privy](./tutorials/privy.md) | Auth infrastructure with embedded wallets | Email, SMS, Social |
 
 ## Quick Start
 
